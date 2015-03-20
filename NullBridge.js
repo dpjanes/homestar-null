@@ -51,8 +51,7 @@ var NullBridge = function (initd, native) {
     var self = this;
 
     self.initd = _.defaults(initd,
-        iotdb.keystore().get("bridges/NullBridge/initd"),
-        {}
+        iotdb.keystore().get("bridges/NullBridge/initd"), {}
     );
 
     self.native = native;
@@ -162,7 +161,7 @@ NullBridge.prototype.pull = function () {
  *  <ul>
  *  <li><code>iot:thing</code> required - a unique ID
  *  <li><code>iot:device</code> suggested if linking multiple things together
- *  <li><code>iot:name</code>
+ *  <li><code>schema:name</code>
  *  <li><code>iot:number</code>
  *  <li><code>schema:manufacturer</code>
  *  <li><code>schema:model</code>
@@ -175,7 +174,7 @@ NullBridge.prototype.meta = function () {
 
     return {
         "iot:thing": _.id.thing_urn.unique_hash("Null"),
-        "iot:name": self.initd.name || "Null",
+        "schema:name": self.initd.name || "Null",
     };
 };
 

@@ -3,10 +3,10 @@
 #
 #   David Janes
 #   IOTDB
-#   2015-02-10
+#   2015-03-06
 #
 
-PACKAGE=homestar-THEPACKAGE
+PACKAGE=homestar-null
 DIST_ROOT=/var/tmp/.dist.$$
 
 if [ ! -d "$DIST_ROOT" ]
@@ -30,8 +30,10 @@ echo "=================="
     update-package --increment-version --package "$PACKAGE" --homestar || exit 1
 
     tar cf - \
-        README.md LICENSE package.json \
-        *.js \
+        README.md LICENSE \
+        homestar.json package.json \
+        NullBridge.js index.js \
+        values/*.js \
         |
     ( cd "${NPM_DST}" && tar xvf - )
 
