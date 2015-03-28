@@ -3,10 +3,7 @@
     "bugs": {
         "url": "https://github.com/dpjanes/homestar-null/issues"
     }, 
-    "peerDependencies": {
-        "iotdb": ">=0.4.16" 
-    }, 
-    "description": "HomeStar / IOTDB Bridge - connected to nothing!",
+    "description": "HomeStar / IOTDB Bridge - connected to nothing!", 
     "devDependencies": {
         "grunt": "~0.4.5", 
         "grunt-contrib-jshint": "~0.10.0", 
@@ -23,6 +20,9 @@
     "license": "Apache-2.0", 
     "main": "index.js", 
     "name": "homestar-null", 
+    "peerDependencies": {
+        "iotdb": ">=0.5.5"
+    }, 
     "private": false, 
     "repository": {
         "type": "git", 
@@ -31,5 +31,5 @@
     "scripts": {
         "test": "grunt"
     }, 
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
