@@ -22,7 +22,7 @@
 
 "use strict";
 
-exports.Bridge = require('./NullBridge');
+exports.Bridge = require('./NullBridge').Bridge;
 exports.bindings = [
     require('./values/boolean').binding,
     require('./values/color').binding,
