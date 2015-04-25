@@ -10,13 +10,12 @@
 
 "use strict";
 
-var iotdb = require("iotdb")
+var iotdb = require("iotdb");
 
 exports.Model = iotdb.make_model('ValuePercent')
     .io("value", iotdb.number.percent)
-    .make()
-    ;
-    
+    .make();
+
 exports.binding = {
     model: exports.Model,
     bridge: require('../NullBridge').Bridge,

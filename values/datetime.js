@@ -10,13 +10,12 @@
 
 "use strict";
 
-var iotdb = require("iotdb")
+var iotdb = require("iotdb");
 
 exports.Model = iotdb.make_model('ValueDatetime')
     .io("value", iotdb.datetime)
-    .make()
-    ;
-    
+    .make();
+
 exports.binding = {
     model: exports.Model,
     bridge: require('../NullBridge').Bridge,
