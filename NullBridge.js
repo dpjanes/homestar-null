@@ -57,6 +57,12 @@ var NullBridge = function (initd, native) {
     self.native = native;
 };
 
+NullBridge.prototype = new iotdb.Bridge();
+
+NullBridge.prototype.name = function () {
+    return "NullBridge";
+};
+
 /* --- lifecycle --- */
 
 /**
