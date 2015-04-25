@@ -77,7 +77,7 @@ NullBridge.prototype.connect = function (connectd) {
         return;
     }
 
-    self.connectd = _.defaults(connectd, {});
+    self._validate_connect(connectd);
 };
 
 NullBridge.prototype._forget = function () {
