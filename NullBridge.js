@@ -168,15 +168,6 @@ NullBridge.prototype.reachable = function () {
  */
 NullBridge.prototype.configure = function (app) {};
 
-/* --- injected: THIS CODE WILL BE REMOVED AT RUNTIME, DO NOT MODIFY  --- */
-NullBridge.prototype.discovered = function (bridge) {
-    throw new Error("NullBridge.discovered not implemented");
-};
-
-NullBridge.prototype.pulled = function (pulld) {
-    throw new Error("NullBridge.pulled not implemented");
-};
-
 /* --- Internals --- */
 /*
  *  API
