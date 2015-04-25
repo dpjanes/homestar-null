@@ -60,7 +60,7 @@ NullBridge.prototype.name = function () {
 /* --- lifecycle --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#discover} for documentation.
  */
 NullBridge.prototype.discover = function () {
     var self = this;
@@ -69,7 +69,7 @@ NullBridge.prototype.discover = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#connect} for documentation.
  */
 NullBridge.prototype.connect = function (connectd) {
     var self = this;
@@ -95,7 +95,7 @@ NullBridge.prototype._forget = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#disconnect} for documentation.
  */
 NullBridge.prototype.disconnect = function () {
     var self = this;
@@ -109,7 +109,7 @@ NullBridge.prototype.disconnect = function () {
 /* --- data --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#push} for documentation.
  */
 NullBridge.prototype.push = function (pushd) {
     var self = this;
@@ -127,7 +127,7 @@ NullBridge.prototype.push = function (pushd) {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#pull} for documentation.
  */
 NullBridge.prototype.pull = function () {
     var self = this;
@@ -144,7 +144,7 @@ NullBridge.prototype.pull = function () {
 /* --- state --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#meta} for documentation.
  */
 NullBridge.prototype.meta = function () {
     var self = this;
@@ -159,14 +159,14 @@ NullBridge.prototype.meta = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#reachable} for documentation.
  */
 NullBridge.prototype.reachable = function () {
     return this.native !== null;
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#configure} for documentation.
  */
 NullBridge.prototype.configure = function (app) {};
 
