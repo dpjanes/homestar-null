@@ -19,4 +19,5 @@ exports.Model = iotdb.make_model('ValuePercent')
 exports.binding = {
     model: exports.Model,
     bridge: require('../NullBridge').Bridge,
+    discover: false,
 };

@@ -26,10 +26,6 @@ var iotdb = require('iotdb');
 var _ = iotdb._;
 var bunyan = iotdb.bunyan;
 
-var unirest = require('unirest');
-var stream = require('stream');
-var NullParser = require('feedparser');
-
 var logger = bunyan.createLogger({
     name: 'homestar-feed',
     module: 'NullBridge',
@@ -64,6 +60,11 @@ NullBridge.prototype.name = function () {
  */
 NullBridge.prototype.discover = function () {
     var self = this;
+
+    logger.info({
+        method: "connect",
+        cause: "trying specifying a specific 'bridge' when initializing",
+    }, "NullBridge does nothing!");
 
     self.discovered(new NullBridge(self.initd, {}));
 };

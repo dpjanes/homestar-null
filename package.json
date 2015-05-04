@@ -3,7 +3,7 @@
     "bugs": {
         "url": "https://github.com/dpjanes/homestar-null/issues"
     }, 
-    "description": "HomeStar / IOTDB Bridge - connected to nothing!", 
+    "description": "HomeStar / IOTDB - a Bridge to Nowhere!", 
     "devDependencies": {
         "grunt": "~0.4.5", 
         "grunt-contrib-jshint": "~0.10.0", 
@@ -21,7 +21,7 @@
     "main": "index.js", 
     "name": "homestar-null", 
     "peerDependencies": {
-        "iotdb": ">=0.6.3"
+        "iotdb": ">=0.6.6"
     }, 
     "private": false, 
     "repository": {
@@ -31,5 +31,5 @@
     "scripts": {
         "test": "grunt"
     }, 
-    "version": "0.0.5"
+    "version": "0.0.6"
 }

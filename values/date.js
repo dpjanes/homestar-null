@@ -19,4 +19,5 @@ exports.Model = iotdb.make_model('ValueDate')
 exports.binding = {
     model: exports.Model,
     bridge: require('../NullBridge').Bridge,
+    discover: false,
 };
