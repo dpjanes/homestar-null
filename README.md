@@ -1,5 +1,5 @@
 # homestar-null
-IOTDB / Home☆Star Controller - Empty Bridge
+IOTDB / Home☆Star Module - Empty Bridge
 
 <img src="https://github.com/dpjanes/iotdb-homestar/blob/master/docs/HomeStar.png" align="right" />
 
@@ -9,6 +9,15 @@ does nothing.
 
 For more information about IOTDB / Home☆Star,
 see [the project page](https://github.com/dpjanes/iotdb-homestar).
+
+# Installation
+
+Install Home☆Star first. 
+See: https://github.com/dpjanes/iotdb-homestar#installation
+
+Then
+
+    $ homestar install homestar-template
 
 ## Models
 ### Values
