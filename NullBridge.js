@@ -112,9 +112,10 @@ NullBridge.prototype.disconnect = function () {
 /**
  *  See {iotdb.bridge.Bridge#push} for documentation.
  */
-NullBridge.prototype.push = function (pushd) {
+NullBridge.prototype.push = function (pushd, done) {
     var self = this;
     if (!self.native) {
+        done(new Error("not connected"));
         return;
     }
 
@@ -125,6 +126,8 @@ NullBridge.prototype.push = function (pushd) {
         unique_id: self.unique_id,
         pushd: pushd,
     }, "pushed");
+
+    done();
 };
 
 /**
