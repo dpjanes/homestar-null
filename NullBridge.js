@@ -157,7 +157,7 @@ NullBridge.prototype.meta = function () {
     }
 
     return {
-        "iot:thing": _.id.thing_urn.unique_hash("Null"),
+        "iot:thing-id": _.id.thing_urn.unique_hash("Null"),
         "schema:name": self.initd.name || "Null",
     };
 };
