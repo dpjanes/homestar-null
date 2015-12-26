@@ -1,7 +1,7 @@
 # homestar-null
 IOTDB / Home☆Star Module - Empty Bridge
 
-<img src="https://github.com/dpjanes/iotdb-homestar/blob/master/docs/HomeStar.png" align="right" />
+<img src="https://raw.githubusercontent.com/dpjanes/iotdb-homestar/master/docs/HomeStar.png" align="right" />
 
 This Home☆Star module contains a number of Models that can be reused
 in other projects. In and of itself, this "Null" Bridge 
