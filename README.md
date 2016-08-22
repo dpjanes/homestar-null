@@ -1,5 +1,5 @@
 # homestar-null
-IOTDB / Home☆Star Module - Empty Bridge
+[IOTDB](https://github.com/dpjanes/node-iotdb) Bridge - does nothing, but provides useful Models
 
 <img src="https://raw.githubusercontent.com/dpjanes/iotdb-homestar/master/docs/HomeStar.png" align="right" />
 
