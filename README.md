@@ -12,12 +12,11 @@ see [the project page](https://github.com/dpjanes/iotdb-homestar).
 
 # Installation
 
-Install Home☆Star first. 
-See: https://github.com/dpjanes/iotdb-homestar#installation
+* [Read this first](https://github.com/dpjanes/node-iotdb/blob/master/docs/install.md)
 
-Then
+Then:
 
-    $ homestar install homestar-null
+    $ npm install homestar-null
 
 ## Models
 ### Values
