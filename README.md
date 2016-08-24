@@ -3,12 +3,13 @@
 
 <img src="https://raw.githubusercontent.com/dpjanes/iotdb-homestar/master/docs/HomeStar.png" align="right" />
 
+# About
+
 This Home☆Star module contains a number of Models that can be reused
 in other projects. In and of itself, this "Null" Bridge 
 does nothing.
 
-For more information about IOTDB / Home☆Star,
-see [the project page](https://github.com/dpjanes/iotdb-homestar).
+* [Read about Bridges](https://github.com/dpjanes/node-iotdb/blob/master/docs/bridges.md)
 
 # Installation
 
