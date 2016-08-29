@@ -35,3 +35,5 @@ exports.bindings = [
     require('./values/time').binding,
     require('./values/unit').binding,
 ];
+
+exports.module_folder = __dirname;
